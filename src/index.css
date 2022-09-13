@@ -1,0 +1,38 @@
+.cdx-simple-button-icon svg {
+  transform: rotate(180deg);
+}
+
+.cdx-simple-button {
+  margin: 0;
+}
+
+.cdx-simple-button__text {
+  margin-bottom: 10px;
+}
+
+.cdx-simple-button__url {}
+
+.cdx-simple-button [contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.cdx-simple-button [contentEditable=true][data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.cdx-simple-button [contentEditable=true][data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+
+.cdx-simple-button-settings {
+  display: flex;
+}
+
+.cdx-simple-button-settings .cdx-settings-button {
+  width: 50%;
+}
